@@ -84,11 +84,14 @@ const App = () => {
   );
 
   return (
-    <div>
-      <ul>
+    <div className="w-60 p-4">
+      <ul className="grid grid-cols-1 gap-1">
         {bookmarkFolders.map((bookmarkFolder, index) => (
           <li key={bookmarkFolder.id}>
-            <button onClick={() => handleCreateGroup(bookmarkFolder, index)}>
+            <button
+              className="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+              onClick={() => handleCreateGroup(bookmarkFolder, index)}
+            >
               {bookmarkFolder.title}
             </button>
           </li>
