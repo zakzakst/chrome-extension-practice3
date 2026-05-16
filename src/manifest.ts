@@ -7,7 +7,7 @@ export default defineManifest({
   name: "My First Extension",
   version: "1.0.0",
 
-  // permissions: ["tabs", "storage"],
+  permissions: ["bookmarks", "tabs", "tabGroups"],
 
   action: {
     default_popup: "index.html",
