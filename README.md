@@ -10,5 +10,5 @@
 ## その他やりたいこと
 
 - 設定ページ
-- tailwind導入
 - iconの動的変更
+- prettier設定
