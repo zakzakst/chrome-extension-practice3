@@ -1,4 +1,5 @@
-import { useEffect, useState, useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
+
 import type { CreateTabGroupPayload } from "./types";
 
 type BookmarkLink = {
@@ -89,7 +90,7 @@ const App = () => {
         {bookmarkFolders.map((bookmarkFolder, index) => (
           <li key={bookmarkFolder.id}>
             <button
-              className="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+              className="w-full rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600"
               onClick={() => handleCreateGroup(bookmarkFolder, index)}
             >
               {bookmarkFolder.title}

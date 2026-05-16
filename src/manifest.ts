@@ -1,5 +1,4 @@
 /// <reference types="chrome" />
-
 import { defineManifest } from "@crxjs/vite-plugin";
 
 export default defineManifest({
